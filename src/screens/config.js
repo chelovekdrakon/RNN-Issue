@@ -6,9 +6,9 @@ import { Pushed } from './pushed'
 
 
 const registerScreens = () => {
-    Navigation.registerComponent('sk.tabs.one', () => Component);
-    Navigation.registerComponent('sk.tabs.two', () => Component);
-    Navigation.registerComponent('sk.tabs.pushed', () => Component);
+    Navigation.registerComponent('sk.tabs.one', () => One);
+    Navigation.registerComponent('sk.tabs.two', () => Two);
+    Navigation.registerComponent('sk.tabs.pushed', () => Pushed);
 };
 
 export {

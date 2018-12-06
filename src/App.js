@@ -1,15 +1,35 @@
-import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Navigation } from 'react-native-navigation';
 
+import { registerScreens } from './screens/config';
+import { bottomTabs } from './navigator/config';
+import { defaultOptions } from './navigator/options';
 
-export default class App extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
-    );
-  }
+export default class App {
+    state = {
+        appState: 'active',
+        connectionType: 'wifi',
+        loggedIn: false
+    };
+
+    setState = (updateState) => {
+        const prevState = { ...this.state };
+
+        this.state = {
+            ...prevState,
+            ...updateState
+        };
+    }
+
+    start() {
+        registerScreens();
+
+        Navigation.events().registerAppLaunchedListener(async () => { 
+            Navigation.setDefaultOptions(defaultOptions);
+            Navigation.setRoot({ root: { bottomTabs } });
+        });
+    }
+
+    launch = () => {
+
+    }
 }

@@ -22,14 +22,14 @@ class Two extends Component {
 
         Navigation.push(componentId, {
             component: {
-                name: 'sk.tabs.pushed'
-            },
-            options: {
-                bottomTabs: {
-                    visible: false,
-                    drawBehind: true
+                name: 'sk.tabs.pushed',
+                options: {
+                    bottomTabs: {
+                        visible: false,
+                        drawBehind: true
+                    }
                 }
-            }
+            },
         });
     }
 
@@ -37,10 +37,9 @@ class Two extends Component {
         return (
             <View style={styles.screen}>
                 <Button 
-                    onPres={this.handlePress}
-                >
-                    Push
-                </Button>
+                    onPress={this.handlePress}
+                    title="Push"
+                />
             </View>
         );
     }

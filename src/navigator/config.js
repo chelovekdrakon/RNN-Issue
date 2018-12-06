@@ -1,23 +1,3 @@
-
-
-const defaultOptions = {
-    bottomTab: {
-        fontFamily: fonts.REGULAR,
-        fontSize: 10,
-        iconColor: 'black',
-        selectedIconColor: 'blue',
-        labelColor: 'black',
-        selectedLabelColor: 'blue',
-        backgroundColor: 'white',
-    },
-    topBar: {
-        title: {
-            color: 'black',
-        },
-        visible: false
-    }
-};
-
 const TAB_1 = {
     id: 'ONE',
     stack: {
@@ -62,8 +42,6 @@ const bottomTabs = {
 };
 
 
-export default {
-    defaultOptions,
-    bottomTabs,
-    authRoot
+export {
+    bottomTabs
 };

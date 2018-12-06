@@ -27,10 +27,9 @@ class Pushed extends Component {
         return (
             <View style={styles.screen}>
                 <Button 
-                    onPres={this.handlePress}
-                >
-                    Back
-                </Button>
+                    onPress={this.handlePress}
+                    title="Back"
+                />
             </View>
         );
     }
