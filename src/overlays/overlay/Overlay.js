@@ -4,13 +4,12 @@ import { Navigation } from 'react-native-navigation';
 
 import { 
     View,
-    Button,
-    Text
+    Button
 } from 'react-native';
 
 import styles from './styles';
 
-class Two extends Component {
+class Overlay extends Component {
     constructor(props) {
         super(props);
         this.state = {  };
@@ -21,30 +20,19 @@ class Two extends Component {
     handlePress() {
         const { componentId } = this.props;
 
-        Navigation.push(componentId, {
-            component: {
-                name: 'sk.tabs.pushed',
-                options: {
-                    bottomTabs: {
-                        visible: false,
-                        drawBehind: true
-                    }
-                }
-            },
-        });
+        Navigation.dismissOverlay(componentId);
     }
 
     render() {
         return (
             <View style={styles.screen}>
-                <Text style={styles.text}>Tab 2</Text>
                 <Button 
                     onPress={this.handlePress}
-                    title="Push"
+                    title="Hide Overlay"
                 />
             </View>
         );
     }
 }
 
-export default Two;
+export default Overlay;

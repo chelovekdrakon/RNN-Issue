@@ -14,21 +14,36 @@ class Pushed extends Component {
         super(props);
         this.state = {  };
 
-        this.handlePress = this.handlePress.bind(this);
+        this.handleBackPress = this.handleBackPress.bind(this);
+        this.handleOverlayPress = this.handleOverlayPress.bind(this);
     }
 
-    handlePress() {
+    handleBackPress() {
         const { componentId } = this.props;
 
         Navigation.pop(componentId);
+    }
+
+    handleOverlayPress() {
+        Navigation.showOverlay({
+            component: {
+                id: 'sk.overlay',
+                name: 'sk.overlay'
+            }
+        })
     }
 
     render() {
         return (
             <View style={styles.screen}>
                 <Button 
-                    onPress={this.handlePress}
+                    onPress={this.handleBackPress}
                     title="Back"
+                />
+                <Button 
+                    style={styles.button}
+                    onPress={this.handleOverlayPress}
+                    title="Show Overlay"
                 />
             </View>
         );

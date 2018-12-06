@@ -4,7 +4,8 @@ import { Navigation } from 'react-native-navigation';
 
 import { 
     View,
-    Button
+    Button,
+    Text
 } from 'react-native';
 
 import styles from './styles';
@@ -36,6 +37,7 @@ class One extends Component {
     render() {
         return (
             <View style={styles.screen}>
+                <Text style={styles.text}>Tab 1</Text>
                 <Button 
                     onPress={this.handlePress}
                     title="Push"

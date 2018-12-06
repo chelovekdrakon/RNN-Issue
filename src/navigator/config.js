@@ -10,8 +10,8 @@ const TAB_1 = {
         ],
         options: {
             bottomTab: {
-                text: 'TWO',
-                title: 'TWO'
+                text: 'ONE',
+                title: 'ONE'
             }
         }
     }
@@ -29,8 +29,8 @@ const TAB_2 = {
         ],
         options: {
             bottomTab: {
-                text: 'ONE',
-                title: 'ONE'
+                text: 'TWO',
+                title: 'TWO'
             }
         }
     }
