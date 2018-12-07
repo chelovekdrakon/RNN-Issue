@@ -4038,6 +4038,10 @@ react-native-navigation@^2.2.0:
     react-lifecycles-compat "2.0.0"
     tslib "1.9.3"
 
+react-native-touch-id@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-touch-id/-/react-native-touch-id-4.3.0.tgz#c25abd1d03d1ce5075f73ca87b18b47e7d60fa71"
+
 react-native@0.57.7:
   version "0.57.7"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.57.7.tgz#5b3af1c43366c41d8d8d2540fea8ce590060bca1"

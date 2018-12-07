@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+// var TouchID = require('react-native-touch-id');
+import TouchId from 'react-native-touch-id';
 import { Navigation } from 'react-native-navigation';
 
 import { 
@@ -30,7 +32,15 @@ class Pushed extends Component {
                 id: 'sk.overlay',
                 name: 'sk.overlay'
             }
-        })
+        });
+
+        // TouchId.isSupported().then((bioType) => {
+        //     TouchID.authenticate('to log in to the app', {}).then(() => {
+        //         this.handleBackPress();
+        //     });
+        // }).catch(() => {
+        //     console.log('lol');
+        // });
     }
 
     render() {
