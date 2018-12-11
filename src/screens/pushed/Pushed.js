@@ -12,6 +12,15 @@ import {
 import styles from './styles';
 
 class Pushed extends Component {
+    static get options() {
+        return {
+            bottomTabs: {
+                visible: false,
+                drawBehind: true
+            }
+        };
+    }
+
     constructor(props) {
         super(props);
         this.state = {  };

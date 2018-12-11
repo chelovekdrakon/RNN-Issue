@@ -23,13 +23,7 @@ class Two extends Component {
 
         Navigation.push(componentId, {
             component: {
-                name: 'sk.tabs.pushed',
-                options: {
-                    bottomTabs: {
-                        visible: false,
-                        drawBehind: true
-                    }
-                }
+                name: 'sk.tabs.pushed'
             },
         });
     }
