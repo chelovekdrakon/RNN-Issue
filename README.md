@@ -1,23 +1,23 @@
-# React-native-navigation Issues
+# Wix/react-native-navigation Issues
 
-## This repository aims to illustrate wix/react-native-navigation Issues I've been faced with
+This repository aims to illustrate wix/react-native-navigation Issues I've been faced with
 
 
-# How to Test
-### **Download the app**
+## How to Test
+#### **Download the app**
 
 
     git clone git@github.com:chelovekdrakon/RNN-Issue.git
 
 
-### **Install packages**
+#### **Install packages**
 
 
     yarn || npm install
 
 
 
-### **Run the App**
+#### **Run the App**
 
 
     yarn start || X-code -> Launch
